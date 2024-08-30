@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map function</title>
+</head>
+<body>
+    <p>multiply each element of the array by 10</p>
+    <p id="demo"></p>
+    <script>
+        var array1 = [29 , 50 , 70 ,89 , 69];
+        function Function1(a) {
+            return a * 10;
+        }
+        var array2 = array1.map(Function1);
+        document.getElementById("demo").innerHTML = array2;
+    </script>
+</body>
+</html>
