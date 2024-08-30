@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort and reverse numbers</title>
+</head>
+<body>
+    <p>select from the bottom to sort the array</p>
+    <button id="btn1" onclick="Ascending()">Ascending order</button>
+    <button id="btn2" onclick="Descending()">Descending order</button>
+    <p id="demo"></p>
+
+    <script>
+        var numbers = [19 , 20 ,80 , 21 , 69];
+        function Ascending() {
+            numbers.sort(function(a,b) {return(a-b)});
+            document.getElementById("demo").innerHTML = numbers;
+        }
+        function Descending() {
+            numbers.sort(function(a,b) {return(b-a)});
+            document.getElementById("demo").innerHTML = numbers;
+        }
+    </script>
+</body>
+</html>
