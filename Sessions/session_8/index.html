@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search replace and type conversion</title>
+</head>
+<body>
+    <center>
+    <h1>This example demonstrates the use of string(),search() and replace()</h1>
+    </center>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+
+<script>
+    var a = "Hello how was your day?";
+     var search_Position = a.search("Hello");
+     var replace = a.replace("Hello" , "Bye");
+     var b = 29;
+     var c = 980;
+    document.getElementById("p1").innerHTML = search_Position;
+    document.getElementById("p2").innerHTML = replace;
+    document.getElementById("p3").innerHTML = b+c;
+    document.getElementById("p4").innerHTML = String(b) + String(c);
+</script>
+
+</body>
+</html>
