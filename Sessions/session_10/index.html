@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation wth JS</title>
+</head>
+<body>
+    
+<center>
+    <H1>fORM VALIDATION</H1>
+    <form name="MyForm" onsubmit ="MyFormValidation()" >
+        <input type="text" name="MyInput">
+        <input type="submit" value="submit">
+        <p id="p1"></p>
+    </form>
+
+</center>
+
+
+<script>
+     function MyFormValidation() {
+        var a = document.forms["MyForm"]["MyInput"].value;
+        if (a = "") {
+            alert("name must be filled out")
+            return false;
+        }
+        
+     }
+     
+</script>
+
+
+
+</body>
+</html>
