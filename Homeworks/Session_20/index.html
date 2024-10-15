@@ -9,19 +9,19 @@
 
     
     <script>
-        // Asynchronous function to get user data
+   
 async function getUser(userId) {
-    // Simulating a delay using a Promise
+  
     return { id: userId, name: "John Doe", email: "john@example.com" };
 }
 
-// Function that depends on the result of getUser
+
 async function showUser(userId) {
-    const user = await getUser(userId); // Wait for the result
-    console.log(user); // Log the result
+    const user = await getUser(userId);
+    console.log(user); 
 }
 
-// Call the function
+
 showUser(1);
 
     </script>
