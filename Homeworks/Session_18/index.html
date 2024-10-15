@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Mapping an array</title>
+</head>
+<body>
+        <p id="Para1"></p>
+    <button id="btn1" onclick="Ascending()">Ascending</button>
+    <button id="btn2" onclick="Descending()">Descending</button>
+
+    <script>
+        var array1 = [125,76,89,54,67,23];
+        document.getElementById("Para1").innerHTML =array1;
+        function Ascending() {
+            array1.sort(function (a,b) {return a-b});
+            document.getElementById("Para1").innerHTML = "Sorted in Ascending order: " + array1;
+        }
+
+        function Descending() {
+            array1.sort(function (a,b) {return b-a});
+            document.getElementById("Para1").innerHTML = "Sorted in Descending order: " + array1;
+        }
+    </script>
+</body>
+</html>
